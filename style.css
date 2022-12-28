@@ -1,0 +1,10 @@
+*,
+*::before,
+*::after {
+  padding: none;
+  margin: none;
+}
+
+body {
+  background-color: bisque;
+}
