@@ -12,14 +12,25 @@
     <header>
         <div class="welcome">
             <h1>Welcome!</h1>
-            <h2>Check Your Local Weather</h2>
+            <h2>Check The Weather</h2>
         </div>
+        <form class="location" onsubmit="event.preventDefault(); getWeather()">
+            <input type="text" name="locationText" id="locationInput" placeholder="Search City" value="Denver">
+            <button type="submit">Search</button>
+        </form>
     </header>
     <main>
-        FUTURE WEATHER STUFF HERE
         <div class="Weather">
-            <p id="currentTemp">
-                Temperature: Degrees
+            <p id="searchLocation">
+                TEST location
+            </p>
+            <div class="tempContainer">
+                <p id="currentTemp">
+                    Temperature: 
+                </p>
+            </div>
+            <p id="feelsLike">
+                Feels Like: 
             </p>
             <p id="currentWind">
                 Wind Speed: MPH
