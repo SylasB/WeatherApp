@@ -3,10 +3,89 @@
 *::after {
   padding: 0;
   margin: 0;
+  color: aliceblue;
 }
 
 body {
   margin: 1vw;
   padding: 1vw;
-  background-color: bisque;
+  background-color: black;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+header {
+  border-bottom: 2px dashed lightslategray;
+  padding: 1vw;
+}
+
+#locationInput {
+  height: 5vh;
+  font-size: x-large;
+  background: none;
+  border: 2px dashed lightslategray;
+  padding-left: 0.5vw;
+}
+
+#locationInput:focus {
+  border: 2px solid lightslategray;
+  box-shadow: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.weather {
+  display: flex;
+  margin: 1vw;
+  padding: 1vw;
+}
+
+.locationTempContainer {
+  margin: 1vw;
+  padding: 1vw;
+}
+
+#searchLocation {
+  font-size: 10vh;
+}
+
+#currentTemp {
+  font-size: 20vh;
+}
+
+.wrappingContainer {
+  display: flex;
+  align-items: center;
+}
+
+.feelsWindHumidityContainer {
+  font-size: xx-large;
+  border-left: 2px solid lightslategray;
+  margin: 1vw;
+  padding: 1vw;
+}
+
+footer {
+  position: fixed;
+  bottom: 2.5%;
+  right: 42.5%;
+}
+
+.hidden {
+  display: none;
 }
